@@ -1,0 +1,51 @@
+{
+  "name": "react-native-monzo-server",
+  "version": "1.0.0",
+  "description": "The server for the React Native Monzo app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "./node_modules/.bin/nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behind-the-buzzword/5-developers-react-to-monzo-api-server.git"
+  },
+  "author": {
+    "name": "Steven Atkinson",
+    "email": "mrstebouk@gmail.com",
+    "url": "https://mrstebo.co.uk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/behind-the-buzzword/5-developers-react-to-monzo-api-server/issues"
+  },
+  "homepage": "https://github.com/behind-the-buzzword/5-developers-react-to-monzo-api-server#readme",
+  "engines": {
+    "node": ">=8.12"
+  },
+  "engineStrict": true,
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.2.0",
+    "nodemon": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}

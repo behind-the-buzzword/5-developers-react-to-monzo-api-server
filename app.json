@@ -1,0 +1,16 @@
+{
+  "name": "React Native Monzo Server",
+  "description": "The server used to exchange authorization codes for access tokens from the Monzo API",
+  "repository": "https://github.com/behind-the-buzzword/5-developers-react-to-monzo-api-server",
+  "logo": "https://raw.githubusercontent.com/behind-the-buzzword/5-developers-react-to-monzo-api-server/master/behind-the-buzzword-logo.jpeg",
+  "keywords": ["node", "express", "react", "native", "monzo", "server", "behind", "buzzword"],
+  "image": "heroku/nodejs",
+  "env": {
+    "MONZO_CLIENT_ID": {
+      "description": "The Client ID of your generated Monzo OAuth client."
+    },
+    "MONZO_CLIENT_SECRET": {
+      "description": "The Client Secret of your generated Monzo OAuth client."
+    }
+  }
+}
